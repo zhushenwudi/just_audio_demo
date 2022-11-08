@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     player.setAudioSource(AudioSource.uri(
-        Uri.parse("https://video-file-upload.oss-cn-hangzhou.aliyuncs.com/1.wav")));
+        Uri.parse("https://video-file-upload.oss-cn-hangzhou.aliyuncs.com/1.flac")));
     player.setLoopMode(LoopMode.one);
 
     player.playerStateStream.listen((state) {
