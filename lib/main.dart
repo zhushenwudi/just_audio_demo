@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:just_audio_background/just_audio_background.dart';
 
 import 'home.dart';
 
 Future<void> main() async {
   await JustAudioBackground.init(
-    androidNotificationChannelId:
-    'com.zhushenwudi.justaudio.channel.audio',
+    androidNotificationChannelId: 'com.zhushenwudi.justaudio.channel.audio',
     androidNotificationChannelName: 'audio playback',
     androidNotificationOngoing: true,
   );
